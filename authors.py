@@ -34,7 +34,9 @@ if __name__ == '__main__':
 		if match:
 			for author in parse_authors(match.group('authors')):
 				print('\index[authors]{{{0}, {1}}}'.format(*author))
-			print('\hypertarget{{paper-{}}}{{}}'.format(parse_filename(match.group('file'))))
+			print('\pdfbookmark[chapter]{{{section}}}{{paper-{id}}}'.format(
+				section=match.group('title'),
+				id=parse_filename(match.group('file'))))
 		print(line)
 		if match:
 			print("")
