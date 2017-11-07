@@ -1,3 +1,10 @@
-prep.*
-authors.*
-papers-with-names.*
+*.idx
+*.ilg
+*.ind
+*.aux
+*.log
+*.out
+*.toc
+*.dfb_
+papers-with-names.tex
+prep.pdf
