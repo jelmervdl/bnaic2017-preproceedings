@@ -1,6 +1,5 @@
 \documentclass[a4paper,oneside]{book}
 \usepackage[utf8x,utf8]{inputenc}
-\usepackage{lipsum}
 \usepackage{pdfpages}
 \usepackage{fancyhdr}
 \usepackage{paralist}
@@ -45,7 +44,6 @@
 \setcounter{page}{1}
 \includepdf[pages=1-,pagecommand={\thispagestyle{empty}}]{layout/firstpages}
 
-%\includepdf[pages=1-,pagecommand={\thispagestyle{empty}}]{layout/committees}
 \section*{Committees}
 	\addcontentsline{toc}{chapter}{Committees}
 	\subsection*{General chairs}
@@ -197,9 +195,7 @@
 		\item[] Yingqian Zhang, Eindhoven University of Technology
 	\end{compactitem}
 
-\section*{Preface}
-\addcontentsline{toc}{chapter}{Preface}
-\lipsum[1-10]
+\include{preface}
 
 \newpage
 \pdfbookmark[chapter]{Table of Contents}{toc}
